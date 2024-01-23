@@ -20,4 +20,10 @@
   --clr-neutral-900: hsl(234, 12%, 34%);
   --clr-neutral-400: hsl(229, 6%, 66%);
   --clr-neutral-100: hsl(0, 0%, 98%);
+
+  /* color for the bar */
+  --clr-teal: hsl(180, 58%, 56%);
+  --clr-red: hsl(0, 70%, 60%);
+  --clr-blue: hsl(212, 75%, 62%);
+  --clr-yellow: hsl(34, 89%, 65%);
 }
