@@ -43,6 +43,7 @@ html {
 
 body {
   margin: 0;
+  padding-block-end: 5rem;
 }
 
 h1,
@@ -66,7 +67,10 @@ header {
 }
 
 .layout-grid {
+  --gap: 2rem;
+
   display: flex;
+  gap: var(--gap);
 }
 
 /* Make each col even size */
@@ -76,4 +80,12 @@ header {
 
 .col {
   border: 3px solid dodgerblue;
+  display: grid;
+  align-items: center;
+  gap: inherit;
+}
+
+.card {
+  padding: 2rem;
+  background: #cdc8c8;
 }
