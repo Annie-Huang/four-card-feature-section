@@ -89,7 +89,13 @@ header p {
 
 @media (min-width: 800px) {
   .layout-grid {
-    grid-template-columns: repeat(3, 1fr);
+    /*grid-template-columns: repeat(3, 1fr);*/
+    /* put ... and .... to make it visual align*/
+    grid-template-areas:
+      '... two   ....'
+      'one two   four'
+      'one three four'
+      '... three ....';
   }
 }
 
@@ -97,13 +103,13 @@ header p {
 .layout-grid > * {
   flex: 1;
 }
-
+/*
 .col {
-  /*border: 3px solid dodgerblue;*/
+  !*border: 3px solid dodgerblue;*!
   display: grid;
   align-items: center;
   gap: inherit;
-}
+}*/
 
 .card {
   --br: 0.325rem;
@@ -113,6 +119,19 @@ header p {
   border-top: var(--br) solid;
   border-radius: var(--br);
   box-shadow: 0 1rem 1.5rem -0.5rem rgb(0 50 100 / 0.15);
+}
+
+.layout-grid > :nth-child(1) {
+  grid-area: one;
+}
+.layout-grid > :nth-child(2) {
+  grid-area: two;
+}
+.layout-grid > :nth-child(3) {
+  grid-area: three;
+}
+.layout-grid > :nth-child(4) {
+  grid-area: four;
 }
 
 .card__title {
