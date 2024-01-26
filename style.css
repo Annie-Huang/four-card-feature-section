@@ -124,15 +124,19 @@ header p {
 
 .layout-grid > :nth-child(1) {
   grid-area: one;
+  border-color: var(--clr-teal);
 }
 .layout-grid > :nth-child(2) {
   grid-area: two;
+  border-color: var(--clr-red);
 }
 .layout-grid > :nth-child(3) {
   grid-area: three;
+  border-color: var(--clr-yellow);
 }
 .layout-grid > :nth-child(4) {
   grid-area: four;
+  border-color: var(--clr-blue);
 }
 
 .card__title {
@@ -146,7 +150,7 @@ header p {
   margin-top: 2rem;
 }
 
-.border-teal {
+/*.border-teal {
   border-color: var(--clr-teal);
 }
 .border-red {
@@ -157,4 +161,4 @@ header p {
 }
 .border-blue {
   border-color: var(--clr-blue);
-}
+}*/
