@@ -64,3 +64,16 @@ header {
   text-align: center;
   margin-block: 6rem;
 }
+
+.layout-grid {
+  display: flex;
+}
+
+/* Make each col even size */
+.layout-grid > * {
+  flex: 1;
+}
+
+.col {
+  border: 3px solid dodgerblue;
+}
