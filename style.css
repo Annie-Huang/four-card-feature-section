@@ -79,7 +79,7 @@ header {
 }
 
 .col {
-  border: 3px solid dodgerblue;
+  /*border: 3px solid dodgerblue;*/
   display: grid;
   align-items: center;
   gap: inherit;
@@ -87,5 +87,10 @@ header {
 
 .card {
   padding: 2rem;
-  background: #cdc8c8;
+  /*background: #cdc8c8;*/
+  border-radius: 0.5rem;
+  box-shadow: 0 1rem 1.5rem -0.5rem rgb(0 50 100 / 0.15);
+}
+
+.card:nth-child(1) {
 }
