@@ -83,8 +83,14 @@ header p {
 .layout-grid {
   --gap: 2rem;
 
-  display: flex;
+  display: grid;
   gap: var(--gap);
+}
+
+@media (min-width: 800px) {
+  .layout-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /* Make each col even size */
