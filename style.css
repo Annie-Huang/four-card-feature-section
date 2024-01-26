@@ -84,6 +84,7 @@ header p {
   --gap: 2rem;
 
   display: grid;
+  grid-auto-columns: 1fr; /* force each columns to be the same size */
   gap: var(--gap);
 }
 
